@@ -99,7 +99,7 @@ let list1 = ref([{
 }, {
   name: '财经'
 }, {
-  name: '手工'
+  name: '手工1'
 }])
 
 const data2 = reactive({
