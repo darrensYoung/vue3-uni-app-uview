@@ -1,0 +1,45 @@
+{
+	"easycom": {
+		"custom": {
+			"^x-(.*)": "@/components/x-$1/x-$1.vue",
+			"^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": /* #exec hotJs('./routers/mainPackage/index.js') */,
+	"subPackages": /* #exec hotJs('./routers/subPackage/index.js') */,
+	"preloadRule":{
+		"pages/index/index" : {
+			"network": "all",
+			"packages": ["pagesA"]
+		}
+	},
+	"tabBar": {
+		"color": "#737892",
+		"selectedColor": "#E5002D",
+		"backgroundColor": "",
+		"position": "bottom",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "./static/home.png",
+				"selectedIconPath": "./static/select-home.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "个人中心",
+				"iconPath": "./static/my.png",
+				"selectedIconPath": "./static/select-my.png"
+			}
+		]
+	},
+	
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

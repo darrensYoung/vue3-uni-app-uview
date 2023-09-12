@@ -1,0 +1,66 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/vue3-essential",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser"
+    },
+    "plugins": [
+         "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {    
+      "vue/multi-word-component-names": ["off", {
+        "ignores": []
+      }],   // 关闭组件的名字
+      "@typescript-eslint/no-empty-function":["off"], // 方法内部没有逻辑书写，不会报错，可以先定义好方法名，方便使用
+      "@typescript-eslint/no-explicit-any":["off"], // ts 定义数据类型为any不报错
+        "arrow-spacing": "error",
+        "comma-spacing": "error",
+        "computed-property-spacing": ["error", "never"],
+        "eol-last": "error",
+        "jsx-quotes": "error",
+        "keyword-spacing": "error",
+        "key-spacing": ["error", {
+          "mode": "strict"
+        }],
+        "vue/no-setup-props-destructure": "off",
+        // "linebreak-style": "error",
+        // "no-console": "error",
+        "no-unused-vars": ["error", {
+          "args": "none",
+          "varsIgnorePattern": "React"
+        }],
+        "no-undef":"off",
+        "no-extra-semi": "error",
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": "error",
+        "no-trailing-spaces": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "error",
+        "no-whitespace-before-property": "error",
+        "object-shorthand": ["error", "always"],
+        "padded-blocks": ["error", "never"],
+        "semi": ["error", "never"],
+        "space-before-blocks": ["error", "always"],
+        "space-before-function-paren": ["error", {
+          "anonymous": "always",
+          "named": "never"
+        }],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": ["error", {"int32Hint": false}],
+        "space-unary-ops": ["error", {
+          "words": true,
+          "nonwords": false
+        }],
+        "rest-spread-spacing": ["error", "never"]
+      }
+}
