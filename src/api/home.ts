@@ -1,6 +1,6 @@
 const http = uni.$u.http
 
-// 测试
+// 测试一
 export const testGet = (params:object, config:object = {}) => http.get('/mini/product_group', {
     params: params
 })
