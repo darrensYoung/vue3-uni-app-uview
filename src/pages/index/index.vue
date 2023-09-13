@@ -2,7 +2,7 @@
   <x-layout  :isLogo="true">
     <view class='is_fixed' :style="{ top: offsetTop + 'rpx' }">
       <u-tabs :list="list1" @change="tabsChange" :current="activeIndex"></u-tabs>
-      <!-- dev -->
+      <!-- dev  -->
     </view>
 
     <swiper class="swiper" :indicator-dots="data.indicatorDots" :autoplay="data.autoplay" :interval="data.interval"
